@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Petoo Assignment</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAVi6tc_eyjVuGrGdd-5-oerKfsOUOqSOQ&libraries=places" type="text/javascript"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div class="container">
+  <div class="searchBox-wrapper">
+    <span class="searchbox-Wrapper-label">To view menu</span>
+    <input type="text" placeholder="Enter your Location" class="location" id="locationInput">
+    <input type="button" value="Locate Me" id="locateme" class="locateme-btn">
+  </div>
+  <div class="user_location">
+    <p>Latitude : <span class="lat"></span></p>
+    <p>Longitude : <span class="long"></span></p>
+    <p>Locality : <span class="locality"></span></p>
+  </div>
+  <h1>Available Menus </h1>
+  <div class="menu-list">
+  </div>
+</div>
+
+
+ <script src="script.js" type="text/javascript"></script>
+</body>
+</html>
