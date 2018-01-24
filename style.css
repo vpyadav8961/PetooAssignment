@@ -1,0 +1,208 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #efefef;
+}
+
+.container {
+  background-color: #efefef;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+.searchBox-wrapper{
+  width:100%;
+  background-color: #263238;;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.searchbox-Wrapper-label,
+.user_location {
+  color: white;
+  font-size: 1.5em;
+  background: transparent 
+}
+
+.locateme-btn  {
+    border: 1px solid #B8BECC;
+    height: 46px;
+    border-top-right-radius: 4px;
+    padding-left: 20px;
+    border-bottom-right-radius: 4px;
+    padding-right: 25px;
+    color: #666;
+    background-color: #fff;
+    background-image: url(https://d39in59pr3ya79.cloudfront.net/n/images/Sprites/locate-me-icon.png);
+    background-repeat: no-repeat;
+    background-size: 25px 25px;
+    background-position: 1px 8px;
+    width: 120px;
+}
+.location {
+    border: 1px solid #B8BECC;
+    width: 353px;
+    height: 44px;
+    border-top-left-radius: 4px;
+    //box-shadow: inset 0px 1px 3px 0px rgba(0,0,0,0.20);
+    padding-left: 26px;
+    border-bottom-left-radius: 4px;
+    color: #666;
+    margin: 20px 0 20px 20px;
+}
+
+.user_location {
+  letter-spacing: 1px;
+  width:100%;
+  box-sizing: border-box;
+  padding: 20px;
+  background-color: #263238;;
+  display: flex;
+  flex-direction : column;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+
+.menu-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 20px;
+}
+
+.red {
+  color: red;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.green {
+  color: green;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nonveg-symbol,
+.veg-symbol {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  border: 2px solid red;
+}
+
+.nonveg-symbol {
+  border: 2px solid red;
+}
+
+.veg-symbol {
+  border: 2px solid green;
+}
+
+
+.nonveg-symbol:after,
+.veg-symbol:after
+ {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+}
+.nonveg-symbol:after {
+  background-color: red;
+}
+.veg-symbol:after {
+  background-color: green;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 400px;
+  border-radius: 5px;
+  background-color: #fff;
+  margin: 20px;
+}
+
+.card:hover {
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+img {
+    border-radius: 5px 5px 0 0;
+}
+
+.card-caption {
+    padding: 2px 16px;
+    background-color: #fff;
+}
+
+h2, h3 {
+  margin: 0;
+  font-weight: 300;
+}
+
+h2 {
+  font-size: em(28);
+  color: #222222;
+  font-weight: 300px;
+}
+
+h3 {
+  font-size: em(15);
+  color: #838689;
+}
+
+.price,
+.veg-nonveg {
+  padding: 15px 15px 15px 0;
+  margin-right: 25px;
+}
+
+.txt {
+  font-size: 20px;
+  vertical-align: middle;
+  color: #838689;
+  position: absolute;
+} 
+
+.menu-item-prop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.fa-inr {
+  font-size: 1.6em;
+}
+
+.price i {
+  margin-right: 10px;
+}
+
+.veg-nonveg,
+.menu-item-prop-left{
+  display: flex;
+}
+.veg-nonveg .txt {
+  margin-left: 35px;
+}
+.hidden {
+  display: none;
+} 
+
+.showmore-btn {
+  color: green;
+  font-size: 20px;
+}
+.menu-caption-hidden {
+  font-size: 20px;
+  color: #838689;
+}
